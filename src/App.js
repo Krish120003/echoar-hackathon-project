@@ -7,16 +7,25 @@ import "./app.css";
 
 export default function App() {
   return (
-    <div>
+    <div className="center">
       <Router>
         <Switch>
           <Route path="/" exact>
-            <div>
-              <div>
-                <Link to="/create">e</Link>
+            <div className="main-page">
+              <div className="header">
+                <h1>DepthView</h1>
+                <h4>
+                  A simple platform for anyone to connect their face with a
+                  image portfolio.
+                </h4>
               </div>
-              <div>
-                <Link to="/view">f</Link>
+              <div className="button-container">
+                <div className="main-button">
+                  <Link to="/create">Create Your Own</Link>
+                </div>
+                <div className="main-button">
+                  <Link to="/view">Profile Viewer</Link>
+                </div>
               </div>
             </div>
           </Route>
