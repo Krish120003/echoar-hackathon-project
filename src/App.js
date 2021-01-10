@@ -37,6 +37,9 @@ export default function App() {
               );
             }}
           ></Route>
+          <Route path="/create">
+            <Create></Create>
+          </Route>
         </Switch>
       </Router>
     </div>
